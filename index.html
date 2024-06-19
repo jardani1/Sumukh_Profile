@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+                                             <!-- Its a complete responsive website and it has drop down menu when you click on the 
+                                                  profile icon also show button for in the responsive phone mode for enhanced experince -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkdin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+
+            <div class="search-box">
+                <img src="images/search.png" />
+                <input type="text" placeholder="Search" />
+                
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li>
+                    <a href="#" class="active-link"><img src="images/home.png" /> <span>Home</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/network.png" /> <span>My Network</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/jobs.png" /> <span>Jobs</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/message.png" /> <span>Messaging</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/notification.png" />
+                        <span>Notification</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <!-- <img src="images/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()" > -->
+                <img src="images/user-1.jpg" class="nav-profile-img" onclick="toggleList()">
+            </div>
+        </div>
+        <!-- profile dorpdown menu------------------------------------------ -->
+
+        <div class="profile-menu-wrap" id ="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.jpg" alt="">
+                    <div>
+                        <h3>Sumukh Shrivastav</h3>
+                        
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class = "profile-menu-link">
+                    <img src="images/feedback.png" >
+                    <P>Give Feedback</P>
+                    <span>></span>
+                </a>
+                <a href="#" class = "profile-menu-link">
+                    <img src="images/setting.png" >
+                    <P>Setting & Privacy</P>
+                    <span>></span>
+                </a>
+                <a href="#" class = "profile-menu-link">
+                    <img src="images/help.png" >
+                    <P>Help & Support</P>
+                    <span>></span>
+                </a>
+                <a href="#" class = "profile-menu-link">
+                    <img src="images/display.png" >
+                    <P>Display & Accessibility</P>
+                    <span>></span>
+                </a>
+                <a href="#" class = "profile-menu-link">
+                    <img src="images/logout.png" >
+                    <P>Logout</P>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <!-- /* Navbar closes */ -->
+
+    <div class="container">
+        <!--------------------left-sidebar---------------------->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.jpg">
+                    <h1>Sumukh Shrivastav</h1>
+                    <h3>Developer At Telus International India</h3>
+                    <ul>
+                        <li>Your profile views<span>57</span></li>
+                        <li>Your post views<span>884</span></li>
+                        <li>Your connections<span>246</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href='#'><img src="images/items.png">My items</a>
+                    <a href='#'><img src="images/premium.png">Try premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png">Web DEvelopment</a>
+                <a href="#"><img src="images/recent.png">User Interface</a>
+                <a href="#"><img src="images/recent.png">TELUS</a>
+                <a href="#"><img src="images/recent.png">Learn Online</a>
+                <a href="#"><img src="images/recent.png">Code Better</a>
+                <a href="#"><img src="images/recent.png">Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png">Web Development GROUPS </a>
+                <a href="#"><img src="images/group.png">Javascript</a>
+                <a href="#"><img src="images/group.png">HTML & CSS Learners</a>
+                <a href="#"><img src="images/group.png">React JS library</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png">Web Development</a>
+                <a href="#"><img src="images/hashtag.png">Javascript</a>
+                <a href="#"><img src="images/hashtag.png">React JS</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show more<b>+</b></p>
+
+        </div>
+
+        <!--------------------main-content---------------------->
+        <div class="main-content">
+            <div class="create-post">
+
+                <div class="create-post-input">
+                    <img src="images/user-1.jpg">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/Photo.png">Photo</li>
+                    <li><img src="images/Video.png">Video</li>
+                    <li><img src="images/Event.png">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/elon-musk.png">
+                    <div>
+                        <h1>Elon Musk</h1>
+                        <small>Founder and CEO of the Tesla Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The sucess of every website depends on the search engine optimization and the digital maketing startergy. if you are on the
+                    first page of the major front then  there goes the role of
+                    UI / UX and all the renering techniques</p>
+                    <img src="images/post-image-1.jpg" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png" >
+                            <img src="images/love.png" >
+                            <img src="images/clap.png" >
+                            <span class="liked-users">Abhinav Mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>48 comments &middot; 40 shares</span>
+                        </div>
+                    </div> 
+                    <div class="post-activity">
+
+                        <div>
+                            <img src="images/user-1.jpg" class="post-activity-user-icon">
+                            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png">
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="images/comment.png" >
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/share.png" >
+                            <span>Share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/send.png" >
+                            <span>Send</span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.jpg">
+                    <div>
+                        <h1>Josheps White</h1>
+                        <small>Founder and CEO of the Techno Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The sucess of every website depends on the search engine optimization and the digital maketing startergy. if you are on the
+                    first page of the major front then  there goes the role of
+                    UI / UX and all the renering techniques</p>
+                    <img src="images/post-image-2.jpg" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png" >
+                            <img src="images/love.png" >
+                            <img src="images/clap.png" >
+                            <span class="liked-users">Abhinav Mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>48 comments &middot; 40 shares</span>
+                        </div>
+                    </div> 
+                    <div class="post-activity">
+
+                        <div>
+                            <img src="images/user-1.jpg" class="post-activity-user-icon">
+                            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png">
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="images/comment.png" >
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/share.png" >
+                            <span>Share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/send.png" >
+                            <span>Send</span>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.jpg">
+                    <div>
+                        <h1>Josheps White</h1>
+                        <small>Founder and CEO of the Techno Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The sucess of every website depends on the search engine optimization and the digital maketing startergy. if you are on the
+                    first page of the major front then  there goes the role of
+                    UI / UX and all the renering techniques</p>
+                    <img src="images/post-image-3.jpg" width="100%">
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png" >
+                            <img src="images/love.png" >
+                            <img src="images/clap.png" >
+                            <span class="liked-users">Abhinav Mishra and 75 others</span>
+                        </div>
+                        <div>
+                            <span>48 comments &middot; 40 shares</span>
+                        </div>
+                    </div> 
+                    <div class="post-activity">
+
+                        <div>
+                            <img src="images/user-1.jpg" class="post-activity-user-icon">
+                            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png">
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link" >
+                            <img src="images/comment.png" >
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/share.png" >
+                            <span>Share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/send.png" >
+                            <span>Send</span>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+        <!--------------------right-sidebar---------------------->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Carrers growing horizontally too</a>
+                <span>19h ago &middot; 1,552 readers</span>
+
+                <a href="#">Less work visa for US , more for UK</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">More hiring = higher confindence?</a>
+                <span>18h ago &middot; 10,984 readers</span>
+
+                <a href="#">Gautam Adani holds the title of world's richest</a>
+                <span>12h ago &middot; 10,934 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+
+            </div>
+
+            <div class="sidebar-ad">
+
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="images/user-1.jpg">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the app</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="images/logo.png">
+                    <p>Linkeup &#169; 2024. All right reserved</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  <!-- for switiching to the menu   -->
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleList(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+      
+    </script>
+    
+    <!-- for the show button   -->
+    <script>
+        let sideActivity=document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+        function toggleActivity(){
+            sideActivity.classList.toggle("open-activity");
+            
+            if(sideActivity.classList.contains("open-activity")){
+                moreLink.innerHTML="Show less <b>-</b>";
+                console.log(hii);
+            }else{
+                moreLink.innerHTML="Show more <b>+</b>";
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>
